@@ -29,7 +29,7 @@ struct ContentView: View
                 
                 HStack
                 {
-                    Text("Joshua Tree National Park")
+                    Text("Joshua' Tree National' Park")
                     Spacer()
                     Text("California")
                 }
