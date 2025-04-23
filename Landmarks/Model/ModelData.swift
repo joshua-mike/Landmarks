@@ -7,12 +7,12 @@
 
 import Foundation
 
-let landmarks: [Landmark] = load("landmarks.json")
+let landmarks: [Landmark] = load("landmarkData.json")
 
 func load<T: Decodable>(_ filename: String) -> T {
 	
 	let data: Data
-	guard let file = Bundle.main.url(forResource: filename, withExtension: nil, subdirectory: "Resources")
+	guard let file = Bundle.main.url(forResource: filename, withExtension: nil)
 	else {
 		fatalError("Unable to locate \(filename) in Resources")
 		}
